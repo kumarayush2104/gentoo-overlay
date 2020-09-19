@@ -19,7 +19,7 @@ RDEPEND="media-libs/libsdl2 \
          media-video/ffmpeg \
          dev-util/android-tools"
 
-ACCEPT_KEYWORDS=""
+KEYWORDS="amd64 x86"
 
 src_configure() {
 	local emesonargs=(
