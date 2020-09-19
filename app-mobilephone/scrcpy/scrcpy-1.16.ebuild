@@ -3,15 +3,15 @@
 
 EAPI=7
 
-inherit meson ninja-utils git-r3
+inherit meson ninja-utils
 
 DESCRIPTION="This application provides display and control of Android devices connected on USB"
 HOMEPAGE="https://github.com/Genymobile/scrcpy"
 
 SERVER="scrcpy-server-v1.16"
 
-EGIT_REPO_URI="https://github.com/Genymobile/scrcpy.git"
-SRC_URI="https://github.com/Genymobile/scrcpy/releases/download/v1.16/${SERVER}"
+SRC_URI="https://github.com/Genymobile/scrcpy/archive/v1.16.tar.gz -> ${P}.tar.gz
+	https://github.com/Genymobile/scrcpy/releases/download/v1.16/${SERVER}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
