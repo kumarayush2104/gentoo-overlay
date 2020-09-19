@@ -10,14 +10,13 @@ HOMEPAGE="https://github.com/Genymobile/scrcpy"
 
 SERVER="scrcpy-server-v1.16"
 
-SRC_URI="https://github.com/Genymobile/scrcpy/archive/v1.16.zip \
-         https://github.com/Genymobile/scrcpy/releases/download/v1.16/${SERVER}"
+EGIT_REPO_URI="https://github.com/Genymobile/scrcpy.git"
+SRC_URI="https://github.com/Genymobile/scrcpy/releases/download/v1.16/${SERVER}"
 
 LICENSE="Apache-2.0"
-
-RDEPEND="media-libs/libsdl2 \
-         media-video/ffmpeg \
-         dev-util/android-tools"
+SLOT="0"
+DEPEND="media-libs/libsdl2[opengl] media-video/ffmpeg"
+RDEPEND="dev-util/android-tools"
 
 KEYWORDS="amd64 x86"
 
